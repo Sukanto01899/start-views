@@ -17,7 +17,7 @@ const Menu = () => {
             <HiBars3BottomRight onClick={()=> setToggle(!toggle)} className={`${toggle ? 'hidden' : 'block'} text-3xl md:hidden`}/>
             <HiOutlineXMark onClick={()=> setToggle(!toggle)} className={`${toggle ? 'block' : 'hidden'} text-3xl md:hidden`}/>
 
-            <div className={`${toggle ? 'top-30px' : 'top-[-250px]'} left-0 w-full h-[250px] absolute bg-violet-300 flex flex-col justify-center items-center space-y-8 duration-500`}>
+            <div className={`${toggle ? 'top-30px' : 'top-[-250px]'} left-0 w-full h-[250px] absolute bg-violet-300 flex flex-col justify-center items-center space-y-8 z-50 duration-500`}>
                 <NavLink to={'/'}>Home</NavLink>
                 <NavLink to={'/reviews'}>Reviews</NavLink>
                 <NavLink to={'/dashboard'}>Dashboard</NavLink>

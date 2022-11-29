@@ -3,6 +3,7 @@ import './App.css';
 import Blogs from './components/blogs/Blogs';
 import Dashboard from './components/dashboard/Dashboard';
 import Error from './components/error/Error';
+import Footer from './components/footer/Footer';
 import Home from './components/home/Home';
 import Menu from './components/menu/Menu';
 import Reviews from './components/reviews/Reviews';
@@ -18,6 +19,7 @@ function App() {
         <Route path='/blogs' element={<Blogs/>}></Route>
         <Route path='*'  element={<Error/>}></Route>
       </Routes>
+      <Footer/>
     </div>
   );
 }

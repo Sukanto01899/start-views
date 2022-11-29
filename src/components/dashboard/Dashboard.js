@@ -9,7 +9,7 @@ const Dashboard = () => {
         .then(data => setData(data))
     }, [])
     return (
-        <div className='flex flex-col md:flex-row justify-center md:justify-between w-full md:w-9/12 mx-auto mt-24 text-center'>
+        <div className='flex flex-col md:flex-row justify-center md:justify-between w-full md:w-9/12 mx-auto mt-24 text-center z-[-1]'>
             <div>
                 <h1 className='text-xl font-semibold'>Month wise sell</h1>
              <BarChart width={500} height={250} data={data}>
